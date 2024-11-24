@@ -1,35 +1,133 @@
 ---
-title: Home
-layout: home
+title: Base de datos
+layout: Base de datos
+---
+title: Lenguaje de marcas
+layout: Lenguaje de marcas
+---
+index.md
+markdown
+Copiar código
+# Mi Portafolio de Asignaturas
+
+Bienvenido/a a mi portafolio. En este espacio encontrarás información organizada por asignaturas. Haz clic en el índice para ir directamente a cada sección.
+
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+## Índice
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+1. [Bases de Datos](#bases-de-datos)
+2. [Sistemas Informáticos](#sistemas-informáticos)
+3. [Entornos de Desarrollo](#entornos-de-desarrollo)
+4. [Lenguaje de Marcas](#lenguaje-de-marcas)
+5. [FOL](#fol)
+6. [Inglés](#inglés)
 
-More specifically, the created site:
+---
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pag
+## Bases de Datos
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+### Descripción
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+En esta sección se incluyen los contenidos relacionados con el diseño, gestión y manipulación de bases de datos.
 
-To get started with creating a site, simply:
+### Ejemplos
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+- **Modelo Relacional**: Diseños de esquemas de base de datos.
+- **SQL**: Consultas, creación de tablas y relaciones.
+  ```sql
+  SELECT nombre, edad 
+  FROM alumnos 
+  WHERE edad > 18;
+Proyectos: Gestión de inventarios, registros escolares.
+Herramientas Utilizadas
+MySQL
+PostgreSQL
+SQLite
+Sistemas Informáticos
+Descripción
+Aspectos técnicos sobre la administración de sistemas operativos y redes.
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+Ejemplos
+Montaje de equipos: Configuración de hardware y software.
+Administración Linux: Comandos básicos de terminal.
+bash
+Copiar código
+sudo apt update
+sudo apt upgrade
+Redes: Configuración de routers y redes locales.
+Entornos de Desarrollo
+Descripción
+Sección dedicada a la configuración de entornos de programación, herramientas y metodologías de trabajo.
 
-----
+Ejemplos
+Configuración de IDEs: VS Code, IntelliJ, Eclipse.
+Uso de Git y GitHub para control de versiones.
+CI/CD Pipelines con GitHub Actions:
+yaml
+Copiar código
+name: Build and Test
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run tests
+        run: npm test
+Lenguaje de Marcas
+Descripción
+Estudio y uso de lenguajes como HTML, XML, y JSON.
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+Ejemplos
+Creación de sitios web básicos con HTML5.
+Uso de XML para definir datos estructurados.
+xml
+Copiar código
+<alumno>
+    <nombre>Juan Pérez</nombre>
+    <edad>20</edad>
+</alumno>
+FOL (Formación y Orientación Laboral)
+Descripción
+Conceptos relacionados con el mundo laboral, derechos y emprendimiento.
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
+Ejemplos
+Derechos Laborales: Resumen de derechos básicos del trabajador.
+Prevención de Riesgos Laborales: Identificación de riesgos y medidas preventivas.
+Proyectos de Emprendimiento: Creación de planes de negocio.
+Inglés
+Descripción
+Sección dedicada al aprendizaje del inglés técnico aplicado a la informática.
+
+Ejemplos
+Vocabulario Técnico:
+Server: Servidor
+Database: Base de datos
+Prácticas de Traducción:
+Traducción de manuales de usuario y documentación técnica.
+Ejemplo de texto:
+plaintext
+Copiar código
+"To access the server, use the following credentials..."
+Contacto
+Si deseas más información, no dudes en contactarme.
+
+markdown
+Copiar código
+
+### ¿Cómo usarlo con GitHub Pages?
+1. **Configura el repositorio:**  
+   - Coloca este archivo como `index.md` en la raíz del repositorio.
+   - Asegúrate de habilitar **GitHub Pages** en la configuración del repositorio y selecciona la rama principal como fuente.
+
+2. **Personaliza el estilo:**  
+   GitHub Pages usará automáticamente un tema predeterminado para mostrar el archivo Markdown como una página web. Puedes personalizar el diseño eligiendo un tema en las configuraciones o añadiendo un archivo `/_config.yml` para usar un tema de Jekyll.
+
+Ejemplo de configuración para usar un tema de Jekyll:
+```yaml
+theme: minima
+
 [Jekyll]: https://jekyllrb.com
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
 [use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
