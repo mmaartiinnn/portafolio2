@@ -5,9 +5,15 @@ layout: Base de datos
 title: Lenguaje de marcas
 layout: Lenguaje de marcas
 ---
+title: Sistemas Informáticos
+layout: Sistemas Informáticos
+---
+title: Entornos de Desarrollo
+layout: Entornos de Desarrollo
+---
 index.md
 markdown
-Copiar código
+
 # Mi Portafolio de Asignaturas
 
 Bienvenido/a a mi portafolio. En este espacio encontrarás información organizada por asignaturas. Haz clic en el índice para ir directamente a cada sección.
@@ -44,7 +50,7 @@ Herramientas Utilizadas
 MySQL
 PostgreSQL
 SQLite
-Sistemas Informáticos
+## Sistemas Informáticos
 Descripción
 Aspectos técnicos sobre la administración de sistemas operativos y redes.
 
@@ -56,7 +62,7 @@ Copiar código
 sudo apt update
 sudo apt upgrade
 Redes: Configuración de routers y redes locales.
-Entornos de Desarrollo
+## Entornos de Desarrollo
 Descripción
 Sección dedicada a la configuración de entornos de programación, herramientas y metodologías de trabajo.
 
@@ -75,7 +81,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run tests
         run: npm test
-Lenguaje de Marcas
+## Lenguaje de Marcas
 Descripción
 Estudio y uso de lenguajes como HTML, XML, y JSON.
 
@@ -88,7 +94,7 @@ Copiar código
     <nombre>Juan Pérez</nombre>
     <edad>20</edad>
 </alumno>
-FOL (Formación y Orientación Laboral)
+ ## FOL (Formación y Orientación Laboral)
 Descripción
 Conceptos relacionados con el mundo laboral, derechos y emprendimiento.
 
@@ -96,7 +102,7 @@ Ejemplos
 Derechos Laborales: Resumen de derechos básicos del trabajador.
 Prevención de Riesgos Laborales: Identificación de riesgos y medidas preventivas.
 Proyectos de Emprendimiento: Creación de planes de negocio.
-Inglés
+## Inglés
 Descripción
 Sección dedicada al aprendizaje del inglés técnico aplicado a la informática.
 
@@ -116,17 +122,7 @@ Si deseas más información, no dudes en contactarme.
 markdown
 Copiar código
 
-### ¿Cómo usarlo con GitHub Pages?
-1. **Configura el repositorio:**  
-   - Coloca este archivo como `index.md` en la raíz del repositorio.
-   - Asegúrate de habilitar **GitHub Pages** en la configuración del repositorio y selecciona la rama principal como fuente.
 
-2. **Personaliza el estilo:**  
-   GitHub Pages usará automáticamente un tema predeterminado para mostrar el archivo Markdown como una página web. Puedes personalizar el diseño eligiendo un tema en las configuraciones o añadiendo un archivo `/_config.yml` para usar un tema de Jekyll.
-
-Ejemplo de configuración para usar un tema de Jekyll:
-```yaml
-theme: minima
 
 
 [Just the Docs]: https://just-the-docs.github.io/just-the-docs/
